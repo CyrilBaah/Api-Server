@@ -1,0 +1,18 @@
+app:
+  name: api-server
+replicaCount: 1
+image:
+  repository: cyrilbaah/api-server
+  tag: latest
+service:
+  type: LoadBalancer
+  port: 3000
+ingress:
+  host: api-server.com
+resources: 
+  limits:
+    cpu: 500m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
