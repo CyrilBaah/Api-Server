@@ -17,5 +17,11 @@ push_image:
 logs:
 	kubectl logs -f deployments/$(DEPLOYMENT) -n $(NAMESPACE)
 
+create_helm:
+	helm install api api-server
+
+uninstall_helm:
+	helm uninstall api 
+
 upgrade_helm:
-	helm upgrade api api-server
+	helm upgrade api 
