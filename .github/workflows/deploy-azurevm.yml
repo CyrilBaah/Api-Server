@@ -20,6 +20,7 @@ jobs:
           username: ${{ secrets.AZURE_VM_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /project
-            echo "successfull"
+            cd /home/azureuser/project
+            echo win.txt
+            echo "Done"
             
