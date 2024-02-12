@@ -21,6 +21,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /home/azureuser/project
-            echo win.txt
+            cat win.txt
             echo "Done"
-            
+            echo "--------------------------------"
+            cd /home/azureuser/project/noustro-be
+            git checkout azurevm
+            git pull    
+                  
