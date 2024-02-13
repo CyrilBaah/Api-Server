@@ -24,7 +24,8 @@ jobs:
             cat win.txt
             echo "Done"
             echo "--------------------------------"
-            cd /home/azureuser/project/noustro-be
+            cd /home/azureuser/projects/apiserver
             git checkout azurevm
             git pull    
+            docker-compose
                   
