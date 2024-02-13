@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
 	// res.json({ message: "API is Online!" });
-	res.send("API is Online!");
+	res.send("API Server is Online!");
 });
 
 const countries = [

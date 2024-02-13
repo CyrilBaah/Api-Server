@@ -33,5 +33,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |  
             cd  /home/azureuser/projects/Api-Server
+            docker system prune -af
             docker-compose up --build -d
                   
